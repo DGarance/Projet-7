@@ -1,0 +1,27 @@
+/*header*/
+
+header {
+    @include display;
+    width: 100%;
+}
+
+body {
+    margin: auto;
+    font-family: 'Montserrat';
+}
+
+a {
+    text-decoration: none;
+    color: $primary-color;
+    padding:10px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+
+footer {
+    display: flex;
+}

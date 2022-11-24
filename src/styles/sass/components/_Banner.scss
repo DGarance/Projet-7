@@ -1,0 +1,17 @@
+.banner{
+
+
+    &__container{
+    justify-content: center;
+    width: 375px;
+    }
+
+    &__container-text{
+        display:flex;
+        justify-content: center;
+    }
+
+    &__img{
+        width: 375px;
+    }
+}
