@@ -1,8 +1,29 @@
 .thumb{
     width: 335px;
+    object-fit: cover;
     height: 255px;
-
-    color:red;
     border-radius: 10px;
     background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+
+
+    &__img{
+        width: 335px;
+        height: 255px;
+        object-fit: fill;
+        background: $primary-color;
+        border-radius: 10px;
+    }
+
+    &__title{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: flex-start;
+        padding-left: 20px;
+    }
+
+    &__text{
+        width: 300px;
+        position: absolute;
+        color: white;
+    }
 }

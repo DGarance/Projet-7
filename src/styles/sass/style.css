@@ -1,48 +1,242 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,500&display=swap");
-.banner__container {
-  justify-content: center;
-  width: 375px;
+@media screen and (min-width: 760px) {
+  body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  header {
+    display: flex;
+  }
+  section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
 }
-.banner__container-text {
-  display: flex;
-  justify-content: center;
-}
-.banner__img {
-  width: 375px;
-}
-
-.thumb {
-  width: 335px;
-  height: 255px;
-  color: red;
-  border-radius: 10px;
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
-}
-
-/*header*/
-header {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  width: 100%;
-}
-
+/*Header*/
+/*Body*/
 body {
   margin: auto;
   font-family: "Montserrat";
+  width: 100%;
 }
 
+/*Décorations des liens*/
 a {
   text-decoration: none;
   color: #ff6060;
   padding: 10px;
 }
 
-nav {
-  display: flex;
-  align-items: center;
+p {
+  font-size: 18px;
+  font-weight: 500;
+  color: #ff6060;
 }
 
 footer {
+  background-color: black;
+  height: 240px;
   display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+}
+
+.section__home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about__banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.about__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.error {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #ff6060;
+}
+.error__title {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  font-size: 96px;
+  font-weight: 700;
+}
+.error__text {
+  margin-top: 10px;
+  text-align: center;
+}
+.error__link {
+  text-decoration: underline;
+  padding-top: 10%;
+  padding-bottom: 10%;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__logo {
+  width: 145px;
+  height: 47px;
+}
+.header__img {
+  width: 140px;
+}
+.header__nav {
+  width: 140px;
+  display: flex;
+  align-items: flex-end;
+  align-content: center;
+  padding: 10px;
+}
+
+.aboutbanner {
+  padding-left: 10px;
+  width: 336px;
+  height: 223px;
+}
+.aboutbanner__img {
+  width: 335px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
+}
+
+.dropdown {
+  margin: auto;
+  background-color: #f7f7f7;
+  width: 100%;
+}
+.dropdown__button {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  width: 100%;
+  background-color: #ff6060;
+}
+.dropdown__title {
+  color: white;
+}
+.dropdown__icons {
+  color: white;
+  width: 30px;
+  font-weight: bold;
+  font-size: 30px;
+  position: absolute;
+  margin-left: 90%;
+}
+
+@-webkit-keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(180deg);
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(180deg);
+  }
+}
+.chevron {
+  color: white;
+  width: 30px;
+  transform: rotate(0deg);
+  transition: all 0.5s ease-in-out;
+}
+
+.rotated {
+  transform: rotate(180deg);
+}
+
+.banner {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
+  height: 111px;
+  display: flex;
+  justify-content: center;
+}
+.banner__container {
+  position: relative;
+}
+.banner__container-text {
+  position: absolute;
+  color: aqua;
+  padding: 10px;
+}
+.banner__img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 111px;
+  border-radius: 10px;
+}
+
+.thumb {
+  width: 335px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 255px;
+  border-radius: 10px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+}
+.thumb__img {
+  width: 335px;
+  height: 255px;
+  -o-object-fit: fill;
+     object-fit: fill;
+  background: #ff6060;
+  border-radius: 10px;
+}
+.thumb__title {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: flex-start;
+  padding-left: 20px;
+}
+.thumb__text {
+  width: 300px;
+  position: absolute;
+  color: white;
+}
+
+.left-arrow {
+  color: black;
+}
+
+.carrousel__container {
+  width: 100%;
+  height: 250px;
+  background-color: red;
+}
+
+.rating__container {
+  display: flex;
+  background-color: red;
 }/*# sourceMappingURL=style.css.map */

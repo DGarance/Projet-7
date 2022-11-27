@@ -1,21 +1,28 @@
-import { useState } from "react";
+import { useState } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
 
+export default function Dropdown(props) {
+    const [isOpen, setIsOpen] = useState(false);
 
-export default function Dropdown(){
-    const [isOpen,setIsOpen] = useState(false);
-
-    const handleClick = event => {
-        setIsOpen(current => !current);
+    const handleClick = (event) => {
+        setIsOpen((current) => !current);
     };
 
     return (
-        <div>
-            <button onClick={handleClick}>Mon</button>
-            {isOpen &&(
+        <div className="dropdown">
+            <div onClick={handleClick} className="dropdown__button">
+                <h2 className="dropdown__title">{props.aboutTitle}</h2>
+                <FontAwesomeIcon
+                    className={isOpen ? 'chevron rotated' : 'chevron'}
+                    icon={faChevronDown}
+                />
+            </div>
+            {isOpen && (
                 <div>
-                    <h2>Some content</h2>
+                    <p className="dropdown__text">{props.aboutText}</p>
                 </div>
             )}
         </div>
-    )
+    );
 }

@@ -1,27 +1,29 @@
-/*header*/
-
-header {
-    @include display;
-    width: 100%;
-}
-
+/*Header*/
+/*Body*/
 body {
     margin: auto;
     font-family: 'Montserrat';
+    width: 100%;
 }
-
+/*Décorations des liens*/
 a {
     text-decoration: none;
     color: $primary-color;
-    padding:10px;
+    padding: 10px;
 }
+ p{
+    font-size: 18px;
+    font-weight: 500;
+    color: $primary-color;
+ }
 
-nav {
+footer{
+    background-color: black;
+    height: 240px;
     display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
     align-items: center;
-}
+    width: 100%;
 
-
-footer {
-    display: flex;
 }

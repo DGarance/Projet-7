@@ -1,0 +1,26 @@
+.error{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    color: $primary-color;
+
+    &__title{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        font-size: 96px;
+        font-weight: 700;
+    }
+
+
+    &__text{
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    &__link{
+        text-decoration: underline;
+        padding-top: 10%;
+        padding-bottom: 10%;
+    }
+}

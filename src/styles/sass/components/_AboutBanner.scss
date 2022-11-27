@@ -1,0 +1,12 @@
+.aboutbanner{
+    padding-left: 10px;
+    width: 336px;
+    height: 223px;
+
+    &__img{
+        width:335px;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+    
+}

@@ -1,0 +1,49 @@
+.dropdown {
+    margin: auto;
+    background-color: $secondary-color;
+    width: 100%;
+
+    &__button {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 10px;
+        width: 100%;
+        background-color: $primary-color;
+    }
+
+    &__title {
+        color: white;
+    }
+
+    &__icons {
+        color: white;
+        width: 30px;
+        font-weight: bold;
+        font-size: 30px;
+        position: absolute;
+        margin-left: 90%;
+
+    }
+
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(180deg);
+    }
+}
+
+.chevron{
+    color: white;
+    width: 30px;
+    transform: rotate(0deg);
+    transition: all 0.5s ease-in-out;
+}
+
+.rotated{
+    transform: rotate(180deg);
+}

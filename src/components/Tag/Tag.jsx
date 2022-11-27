@@ -1,6 +1,6 @@
 import styled from "styled-components"
 
-export default function Tag(){
+export default function Tag(props){
 
     const TagContainer = styled.div`
     display:flex;
@@ -14,7 +14,7 @@ export default function Tag(){
 
  return (
     <TagContainer>
-        <StyledSpan>Je m'appelle</StyledSpan>
+        <StyledSpan>{props.tag}</StyledSpan>
     </TagContainer>
  )
 }

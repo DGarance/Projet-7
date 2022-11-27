@@ -1,29 +1,10 @@
-import { Link } from "react-router-dom";
-import styled from "styled-components";
-
-
-export default function Error(){
-
-    const ErrorContainer = styled.div`
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;`
-
-    const ErrorTitle = styled.h1`
-    font-size:288px;
-    color:#FF6060;
-    `
-    const ErrorText = styled.p`
-    top:30px;
-    color:#FF6060;
-    `
-
-    return(
-        <ErrorContainer>
-            <ErrorTitle>404</ErrorTitle>
-            <ErrorText>Oups! La page que vous demandez n'existe pas.</ErrorText>
-            <Link to='/'>Retourner sur la page d'accueil</Link>
-        </ErrorContainer>
-    )
+import { Link } from 'react-router-dom';
+export default function Error() {
+    return (
+        <div className="error">
+            <p className="error__title">404</p>
+            <p className="error__text">Oups! La page que vous demandez n'existe pas.</p>
+            <Link to="/" className='error__link'>Retourner sur la page d'accueil</Link>
+        </div>
+    );
 }

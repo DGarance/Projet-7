@@ -2,9 +2,17 @@
 
 @import "./utils/mixins";
 @import"./utils/variables";
+@import"./base/mediaqueries";
 @import "./layouts/base";
-@import "./components/Banner";
+@import "./pages/Home";
+@import "./pages/About";
+@import "./pages/Error";
+@import"./components/Header";
+@import "./components/AboutBanner";
+@import "./components/Dropdown";
+@import "./components/HomeBanner";
 @import "./components/Thumb";
 @import "./components/Caroussel";
 @import "./components/Tag";
+@import "./components/Rating";
 
