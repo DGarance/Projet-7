@@ -46,13 +46,13 @@ export default function Locations() {
                             <h3>{chooseAppart.location}</h3>
                         </div>
                         <div className="location__tags">
-                            {tags.map((tag) => (
-                                <Tag key={tag} tag={tag} />
+                            {tags.map((tags) => (
+                                <Tag key={tags} tag={tags} />
                             ))}
                         </div>
                     </div>
                     <div className="location__host-rating">
-                        <div className="Location__host">
+                        <div className="location__host">
                             <Host
                                 hostName={chooseAppart.host.name}
                                 hostPic={chooseAppart.host.picture}

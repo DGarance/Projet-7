@@ -1,5 +1,15 @@
 .rating__container{
     display: flex;
-    background-color: red;
     
+}
+
+.rating__fullstar{
+    width: 15px;
+    color: $primary-color;
+
+}
+
+.rating__emptystar{
+    width: 15px;
+    color: gray;
 }

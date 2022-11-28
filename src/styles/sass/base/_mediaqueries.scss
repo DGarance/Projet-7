@@ -1,18 +1,18 @@
-@media screen and (min-width: 760px) {
+@media only screen and (min-width: 768px) {
     body {
         width: 100%;
         margin: 0;
         padding: 0;
     }
 
-    header{
+    header {
         display: flex;
     }
 
-    section{
-       display: flex;
-       flex-wrap: wrap;
-       justify-content: space-evenly;
+    section {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
     }
 
 }

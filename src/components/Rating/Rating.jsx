@@ -10,15 +10,14 @@ export default function Rating({ score }) {
                     <FontAwesomeIcon
                         key={level.toString()}
                         className="rating__fullstar"
-                        src={faStar}
+                        icon={faStar}
                         alt="rating star"
                     />
                 ) : (
-                    //affichage conditionnel des étoiles de score, pleine ou vide selon le score passé en props
                     <FontAwesomeIcon
                         key={level.toString()}
                         className="rating__emptystar"
-                        src={faStar}
+                        icon={faStar}
                         alt="rating star"
                     />
                 )

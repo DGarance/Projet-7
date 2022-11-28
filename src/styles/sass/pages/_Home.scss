@@ -1,5 +1,27 @@
-.section__home{
+.section__home {
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        padding: 20px;
+    }
+}
+
+.section__logement {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    @media screen and (min-width:768px) {
+        display: flex;
+            justify-content: space-evenly;
+            padding: 31px;
+            background-color: #f1f1f1;
+            margin-top: 20px;
+            border-radius: 25px
+    }
 }

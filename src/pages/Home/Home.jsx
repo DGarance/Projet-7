@@ -13,11 +13,11 @@ export default function Home() {
 
     return (
         <section className='section__home'>
-            <section>
+            <section className='section__banner'>
                 <HomeBanner />
             </section>
 
-            <section>
+            <section className='section__logement'>
                 {data.map((appart, id) => (
                     <div className="card_logement" key={id}>
                         <Link

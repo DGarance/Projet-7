@@ -1,0 +1,22 @@
+.host {
+    display: flex;
+    justify-content: flex-end;
+    width: 135px;
+    height: 33px;
+
+    &__name {
+        width: 60px;
+        height: 33px;
+        display: flex;
+        align-items: center;
+        color: $primary-color;
+        font-size: 12px;
+        text-align: center;
+    }
+
+    &__picture {
+        border-radius: 100px;
+        width: 32px;
+        height: 32px;
+    }
+}

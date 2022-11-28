@@ -1,30 +1,65 @@
 .banner {
-    width: 100%;
     object-fit: cover;
     border-radius: 10px;
     height: 111px;
     display: flex;
     justify-content: center;
 
-    &__container {
-        position: relative;
-       
+    @media screen and (min-width: 768px) {
+        width: 100%;
+        height: 223px;
+    }
 
+    &__picture {
+        filter: brightness(85%);
+    }
+
+
+    &__container {
+        position: absolute;
+        width: 217px;
+        height: 48px;
+        top: 17%;
+
+        @media screen and (min-width: 768px) {
+            width: 705px;
+            height: 68px;
+            top: 25%;
+            left: 20%;
+
+        }
 
     }
 
     &__container-text {
         position: absolute;
-        color: aqua;
-        padding: 10px;
+        width: 181px;
+        left: -20%;
+        color: white;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 24px;
+
+        @media screen and (min-width: 768px) {
+            width: 705px;
+            height: 68px;
+            font-weight: 500;
+            font-size: 48px;
+            line-height: 68.45px;
+
+        }
     }
 
     &__img {
-        width: 100%;
         object-fit: cover;
         height: 111px;
         border-radius: 10px;
 
+
+        @media screen and (min-width: 768px) {
+            width: 100%;
+            height: 223px;
+        }
     }
 
 }

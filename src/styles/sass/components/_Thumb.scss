@@ -5,13 +5,22 @@
     border-radius: 10px;
     background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
 
+    @media screen and (min-width: 768px) {
+        width: 340px;
+        height: 340px;
+    }
 
     &__img{
         width: 335px;
         height: 255px;
-        object-fit: fill;
+        object-fit: cover;
         background: $primary-color;
         border-radius: 10px;
+
+        @media screen and (min-width: 768px) {
+                width: 340px;
+                height: 340px;
+            }
     }
 
     &__title{
@@ -25,5 +34,6 @@
         width: 300px;
         position: absolute;
         color: white;
+        line-height: 25.67px;
     }
 }

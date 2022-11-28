@@ -1,0 +1,15 @@
+.tag{
+    width: 84px;
+    background: $primary-color;
+    border-radius: 5px;
+    text-align: center;
+
+
+    &__text{
+        position: relative;
+        bottom: 2px;
+        width: 24px ;
+        font-size: 10px;
+        color: white;
+    }
+}

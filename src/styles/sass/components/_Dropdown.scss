@@ -1,18 +1,33 @@
 .dropdown {
     margin: auto;
     background-color: $secondary-color;
-    width: 100%;
+    width: 335px;
+
+    @media screen and (min-width:760px) {
+           margin:auto;
+           width: 100%;
+           margin-bottom: 30px;
+        }
+
 
     &__button {
         display: flex;
         justify-content: space-between;
+        align-items: center;
         margin-top: 10px;
-        width: 100%;
         background-color: $primary-color;
+        height:47px;
+        border-radius: 5px;
+
+        @media screen and (min-width:760px) {
+                margin-top: 0px;
+            }
+    
     }
 
     &__title {
         color: white;
+        padding: 20px;
     }
 
     &__icons {
@@ -25,16 +40,6 @@
 
     }
 
-}
-
-@keyframes rotate {
-    0% {
-        transform: rotate(0deg);
-    }
-
-    100% {
-        transform: rotate(180deg);
-    }
 }
 
 .chevron{

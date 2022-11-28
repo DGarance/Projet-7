@@ -1,9 +1,60 @@
-.left-arrow{
-    color: black;
+.carrousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+
+@media screen and (min-width:760px) {
+        width: 100%;
+        height: 415px;
+
+
+    }
+
+    &__img {
+        display: flex;
+        justify-content: center;
+        width: 335px;
+        height: 255px;
+        border-radius: 10px;
+        object-fit: cover;
+
+        @media screen and (min-width:760px) {
+           width: 100%;
+           height: 415px;
+
+
+        }
+    }
+
+    &__arrow-container {
+        position: relative;
+    }
+
+    &__arrow-left {
+        position: absolute;
+        display: inline-block;
+        color: white;
+        left: 24px;
+        width: 24px;
+        height: 24px;
+    }
+
+    &__arrow-right {
+        width: 24px;
+        height: 24px;
+        position: absolute;
+        display: inline-block;
+        color: white;
+        left: 311px;
+    }
+
 }
 
-.carrousel__container{
-    width: 100%;
-    height: 250px;
-    background-color: red;
+.slider{
+   
+
+    &__number{
+        display: none;
+    }
 }

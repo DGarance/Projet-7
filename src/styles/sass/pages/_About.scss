@@ -1,14 +1,37 @@
-.about__banner{
+.about {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-  
-}
-
-.about__container{
-    display: flex;
-    justify-content: center;
     align-items: center;
     flex-direction: column;
+
+    @media screen and (min-width:760px) {
+        padding: 20px;
+    }
+
+    &__banner {
+        color: aqua;
+
+        @media screen and (min-width:760px) {
+            margin-bottom: 35px;
+        }
+    }
+
+    &__container {
+        width: 100%;
+        padding: 0 20px;
+        margin: 0 20px;
+    }
+
+    &__dropdown {
+        padding-bottom: 20px;
+        width: 100%;
+
+        @media screen and (min-width:760px) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0 180px;
+        }
+
+
+    }
 }
