@@ -174,11 +174,15 @@ h3 {
 @media screen and (min-width: 768px) {
   .location__host-rating {
     flex-direction: column;
-    justify-content: space-around;
   }
 }
 .location__host {
   padding-top: 10px;
+}
+@media screen and (min-width: 768px) {
+  .location__host {
+    padding-top: 0;
+  }
 }
 .location__container-tags-title {
   display: flex;
