@@ -6,19 +6,21 @@ body {
     font-family: 'Montserrat';
     width: 100%;
 }
+
 /*Décorations des liens*/
 a {
     text-decoration: none;
     color: $primary-color;
     padding: 10px;
 }
- p{
+
+p {
     font-size: 18px;
     font-weight: 500;
     color: $primary-color;
- }
+}
 
-footer{
+footer {
     background-color: black;
     height: 240px;
     display: flex;
@@ -29,6 +31,28 @@ footer{
 
 }
 
-li{
+li {
     list-style: none;
+}
+
+h1 {
+    font-size: 18px;
+
+    @media screen and (min-width:768px) {
+        line-height: 51%;
+        font-size: 36px;
+    }
+
+}
+
+h3 {
+    font-size: 14px;
+    line-height: 19%;
+
+    @media screen and (min-width:768px) {
+        line-height: 25%;
+        font-size: 18px;
+        font-weight: 100;
+    }
+
 }

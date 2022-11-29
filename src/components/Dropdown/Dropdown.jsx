@@ -19,9 +19,9 @@ export default function Dropdown(props) {
                 />
             </div>
             {isOpen && (
-                <div>
+                <span>
                     <p className="dropdown__text">{props.aboutText}</p>
-                </div>
+                </span>
             )}
         </div>
     );

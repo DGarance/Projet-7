@@ -39,7 +39,7 @@ export default function Locations() {
         chooseAppart && (
             <div key={params.id} className="location">
                 <Caroussel slides={slidePics} />
-                <section className="location__host">
+                <section className="location__container">
                     <div className="location__container-tags-title">
                         <div className="location__title">
                             <h1>{chooseAppart.title}</h1>
@@ -64,14 +64,18 @@ export default function Locations() {
                     </div>
                 </section>
                 <div className="location__dropdown">
-                    <Dropdown
-                        aboutTitle="Description"
-                        aboutText={chooseAppart.description}
-                    />
-                    <Dropdown
-                        aboutTitle="Équipements"
-                        aboutText={listEquipments}
-                    />
+                    <div className="location__dropdown-des">
+                        <Dropdown
+                            aboutTitle="Description"
+                            aboutText={chooseAppart.description}
+                        />
+                    </div>
+                    <div className="location__dropdown-eqp">
+                        <Dropdown
+                            aboutTitle="Équipements"
+                            aboutText={listEquipments}
+                        />
+                    </div>
                 </div>
             </div>
         )

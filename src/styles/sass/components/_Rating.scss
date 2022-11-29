@@ -1,15 +1,27 @@
-.rating__container{
+.rating__container {
     display: flex;
-    
+
 }
 
-.rating__fullstar{
+.rating__fullstar {
     width: 15px;
+    height: 15px;
     color: $primary-color;
 
+    @media screen and (min-width:768px) {
+        width: 36px;
+        height: 36px;
+    }
+
 }
 
-.rating__emptystar{
+.rating__emptystar {
     width: 15px;
+    height: 15px;
     color: gray;
+
+    @media screen and (min-width:768px) {
+        width: 36px;
+        height: 36px;
+    }
 }

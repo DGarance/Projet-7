@@ -22,25 +22,23 @@ export default function Carroussel({ slides }) {
 
     return (
         <div className="carrousel">
-            <div className='carrousel__arrow-container'>
-                <div className='carrousel__arrow-left'>
-                    <FontAwesomeIcon
-                        icon={faChevronLeft}
-                        onClick={prevSlide}
-                    ></FontAwesomeIcon>
-                </div>
-                <div className='carrousel__arrow-right'>
-                    <FontAwesomeIcon
-                        icon={faChevronRight}
-                        onClick={nextSlide}
-                    ></FontAwesomeIcon>
-                </div>
-            </div>
+            <FontAwesomeIcon
+                icon={faChevronLeft}
+                onClick={prevSlide}
+                className="carrousel__left-arrow"
+            ></FontAwesomeIcon>
 
+            <FontAwesomeIcon
+                icon={faChevronRight}
+                onClick={nextSlide}
+                className="carrousel__right-arrow"
+            ></FontAwesomeIcon>
             {slides.map((slide, index) => {
                 return (
                     <div
-                        className={index === current ? 'slider active' : 'slider'}
+                        className={
+                            index === current ? 'slider__active' : 'slider'
+                        }
                         key={index}
                     >
                         {index === current && (
@@ -50,9 +48,12 @@ export default function Carroussel({ slides }) {
                                 className="carrousel__img"
                                 alt="photos"
                             />
-                        )}{
-                            index === current && (<span className='slider__number'>{current +1}/{length}</span>)
-                        }
+                        )}
+                        {index === current && (
+                            <span className="slider__number">
+                                {current + 1}/{length}
+                            </span>
+                        )}
                     </div>
                 );
             })}

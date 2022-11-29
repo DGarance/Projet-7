@@ -12,14 +12,14 @@ export default function Home() {
     }, []);
 
     return (
-        <section className='section__home'>
-            <section className='section__banner'>
+        <section className="section__home">
+            <section className="section__banner">
                 <HomeBanner />
             </section>
 
-            <section className='section__logement'>
+            <section className="section__logement">
                 {data.map((appart, id) => (
-                    <div className="card_logement" key={id}>
+                    <div className="thumb__logement" key={id}>
                         <Link
                             className="link_card_logement"
                             to={`/locations/${appart.id}`}

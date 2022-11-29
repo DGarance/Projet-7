@@ -1,10 +1,11 @@
 .carrousel {
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 10px;
 
-@media screen and (min-width:760px) {
+    @media screen and (min-width:768px) {
         width: 100%;
         height: 415px;
 
@@ -19,42 +20,68 @@
         border-radius: 10px;
         object-fit: cover;
 
-        @media screen and (min-width:760px) {
-           width: 100%;
-           height: 415px;
-
-
+        @media screen and (min-width:768px) {
+            width: 100%;
+            height: 415px;
         }
     }
 
-    &__arrow-container {
-        position: relative;
+    &__left-arrow {
+        position: absolute;
+        top: 50%;
+        left: 20px;
+        font-size: 24px;
+        color: white;
+        z-index: 10;
+        cursor: pointer;
+        user-select: none;
+
+        @media screen and (min-width:768px) {
+            font-size: 75px;
+        }
     }
 
-    &__arrow-left {
+    &__right-arrow {
         position: absolute;
-        display: inline-block;
+        top: 50%;
+        right: 20px;
+        font-size: 24px;
         color: white;
-        left: 24px;
-        width: 24px;
-        height: 24px;
-    }
+        z-index: 10;
+        cursor: pointer;
+        user-select: none;
 
-    &__arrow-right {
-        width: 24px;
-        height: 24px;
-        position: absolute;
-        display: inline-block;
-        color: white;
-        left: 311px;
+        @media screen and (min-width:768px) {
+            font-size: 75px;
+        }
     }
 
 }
 
-.slider{
-   
+.slider {
+    opacity: 0;
+    transition-duration: 1s ease;
 
-    &__number{
+    &__active {
+        opacity: 1;
+        transition-duration: 1s;
+        transform: scale(1);
+        object-fit: cover;
+        width: 100%;
+    }
+
+
+    &__number {
         display: none;
+
+        @media screen and (min-width:768px) {
+            display: block;
+            position: absolute;
+            top: 86%;
+            left: 48%;
+            color: white;
+            font-size: 18px;
+
+        }
     }
 }
