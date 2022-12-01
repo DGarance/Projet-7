@@ -15,10 +15,13 @@ export default function Locations() {
     useEffect(() => {
         const getData = async () => {
             const res = await axios.get('/data.json');
-            const choose = res.data.find(({ id }) => id === params.id);
-            res.data.map(() => setChooseAppart(choose));
+            const choose = res.data.find(
+                (location) => location.id === params.id
+            );
             if (choose === undefined) {
                 navigate('/*', { state: { message: 'Erreur' } });
+            } else {
+                setChooseAppart(choose);
             }
         };
         getData();
@@ -37,7 +40,7 @@ export default function Locations() {
 
     return (
         chooseAppart && (
-            <div key={params.id} className="location">
+            <section key={params.id} className="location">
                 <Caroussel slides={slidePics} />
                 <section className="location__container">
                     <div className="location__container-tags-title">
@@ -77,7 +80,7 @@ export default function Locations() {
                         />
                     </div>
                 </div>
-            </div>
+            </section>
         )
     );
 }

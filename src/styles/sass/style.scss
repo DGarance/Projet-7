@@ -1,8 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,500&display=swap');
 
-@import "./utils/mixins";
 @import"./utils/variables";
-@import"./base/mediaqueries";
 @import "./layouts/base";
 @import "./pages/Home";
 @import "./pages/About";
@@ -17,4 +15,3 @@
 @import "./components/Tag";
 @import "./components/Host";
 @import "./components/Rating";
-

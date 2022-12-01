@@ -1,5 +1,5 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faStar } from '@fortawesome/free-solid-svg-icons';
+import fullStar from '../../assets/fullstar.svg';
+import emptyStar from '../../assets/emptystar.svg';
 
 export default function Rating({ score }) {
     const stars = [1, 2, 3, 4, 5];
@@ -7,17 +7,17 @@ export default function Rating({ score }) {
         <div className="rating__container">
             {stars.map((level) =>
                 score >= level ? (
-                    <FontAwesomeIcon
+                    <img
                         key={level.toString()}
                         className="rating__fullstar"
-                        icon={faStar}
+                        src={fullStar}
                         alt="rating star"
                     />
                 ) : (
-                    <FontAwesomeIcon
+                    <img
                         key={level.toString()}
                         className="rating__emptystar"
-                        icon={faStar}
+                        src={emptyStar}
                         alt="rating star"
                     />
                 )

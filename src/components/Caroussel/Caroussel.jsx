@@ -1,9 +1,6 @@
-import { useState } from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {
-    faChevronLeft,
-    faChevronRight,
-} from '@fortawesome/free-solid-svg-icons';
+import React, { useState } from 'react';
+import leftArrow from '../../assets/leftarrow.svg';
+import rightArrow from '../../assets/rightarrow.svg';
 
 export default function Carroussel({ slides }) {
     const [current, setCurrent] = useState(0);
@@ -22,17 +19,24 @@ export default function Carroussel({ slides }) {
 
     return (
         <div className="carrousel">
-            <FontAwesomeIcon
-                icon={faChevronLeft}
-                onClick={prevSlide}
-                className="carrousel__left-arrow"
-            ></FontAwesomeIcon>
+            {length > 1 && (
+                <>
+                    <img
+                        src={leftArrow}
+                        alt=""
+                        onClick={prevSlide}
+                        className="carrousel__left-arrow"
+                    />
 
-            <FontAwesomeIcon
-                icon={faChevronRight}
-                onClick={nextSlide}
-                className="carrousel__right-arrow"
-            ></FontAwesomeIcon>
+                    <img
+                        src={rightArrow}
+                        alt=""
+                        onClick={nextSlide}
+                        className="carrousel__right-arrow"
+                    />
+                </>
+            )}
+
             {slides.map((slide, index) => {
                 return (
                     <div

@@ -9,26 +9,13 @@
     }
 
     &__picture {
-        width: 95%;
         filter: brightness(70%);
-    }
-
-
-    &__container {
-        display: flex;
-        justify-content: center;
-
-        @media screen and (min-width: 768px) {
-            position: absolute;
-        }
-
     }
 
     &__container-text {
         position: absolute;
         width: 181px;
-        color: white;
-        font-weight: 500;
+        color: $tertiary-color;
         font-size: 24px;
         line-height: 24px;
 

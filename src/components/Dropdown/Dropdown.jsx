@@ -1,6 +1,5 @@
 import { useState } from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
+import chevronDown from '../../assets/chevrondown.svg';
 
 export default function Dropdown(props) {
     const [isOpen, setIsOpen] = useState(false);
@@ -13,16 +12,13 @@ export default function Dropdown(props) {
         <div className="dropdown">
             <div onClick={handleClick} className="dropdown__button">
                 <h2 className="dropdown__title">{props.aboutTitle}</h2>
-                <FontAwesomeIcon
+                <img
+                    src={chevronDown}
+                    alt=""
                     className={isOpen ? 'chevron rotated' : 'chevron'}
-                    icon={faChevronDown}
                 />
             </div>
-            {isOpen && (
-                <span>
-                    <p className="dropdown__text">{props.aboutText}</p>
-                </span>
-            )}
+            {isOpen && <p className="dropdown__text">{props.aboutText}</p>}
         </div>
     );
 }

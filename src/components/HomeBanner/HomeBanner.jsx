@@ -7,7 +7,7 @@ export default function Banner() {
             <div className="banner__container">
                 <picture className="banner__picture">
                     <source media="(max-width:768px)" srcSet={homeBannerM} />
-                    <source media="(min-width:375px)" srcset={homeBannerD} />
+                    <source media="(min-width:375px)" srcSet={homeBannerD} />
                     <img
                         src={homeBannerM}
                         alt="Bannière"

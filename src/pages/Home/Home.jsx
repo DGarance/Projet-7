@@ -18,8 +18,8 @@ export default function Home() {
             </section>
 
             <section className="section__logement">
-                {data.map((appart, id) => (
-                    <div className="thumb__logement" key={id}>
+                {data.map((appart, index) => (
+                    <div className="thumb__logement" key={index}>
                         <Link
                             className="link_card_logement"
                             to={`/locations/${appart.id}`}

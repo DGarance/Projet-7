@@ -1,15 +1,16 @@
-.tag{
-    width: 84px;
+.tag {
     background: $primary-color;
-    border-radius: 5px;
+    border-radius: 10px;
     text-align: center;
+    padding: 2px 20px;
+    margin-right: 10px;
 
 
-    &__text{
+    &__text {
         position: relative;
         bottom: 2px;
-        width: 24px ;
+        width: 24px;
         font-size: 10px;
-        color: white;
+        color: $tertiary-color;
     }
 }

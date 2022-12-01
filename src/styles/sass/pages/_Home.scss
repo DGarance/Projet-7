@@ -1,20 +1,7 @@
 .section__home {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
     @media screen and (min-width: 768px) {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-        padding: 30px;
+        padding: 0 30px 30px;
     }
-}
-
-.section__banner {
-    width: 100%;
-    display: flex;
-    justify-content: center;
 }
 
 .section__logement {
@@ -24,9 +11,9 @@
 
     @media screen and (min-width:768px) {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         padding: 31px;
-        background-color: #f1f1f1;
+        background-color: $secondary-color;
         margin-top: 20px;
         border-radius: 25px
     }

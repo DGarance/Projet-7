@@ -2,53 +2,49 @@
     margin: auto;
     background-color: $secondary-color;
     width: 335px;
+    border-radius: 10px;
 
-    @media screen and (min-width:760px) {
-           margin:auto;
-           width: 100%;
-           margin-bottom: 30px;
-        }
+    @media screen and (min-width:768px) {
+        margin: auto;
+        width: 100%;
+        margin-bottom: 30px;
+    }
 
 
     &__button {
         display: flex;
         justify-content: space-between;
+        padding: 0 10px;
         align-items: center;
         margin-top: 10px;
         background-color: $primary-color;
-        height:47px;
+        height: 47px;
         border-radius: 5px;
 
-        @media screen and (min-width:760px) {
-                margin-top: 0px;
-            }
-    
+        @media screen and (min-width:768px) {
+            margin-top: 0px;
+        }
+
     }
 
     &__title {
-        color: white;
-        padding: 20px;
+        color: $tertiary-color;
     }
 
-    &__icons {
-        color: white;
-        width: 30px;
-        font-weight: bold;
-        font-size: 30px;
-        position: absolute;
-        margin-left: 90%;
-
-    }
 
 }
 
-.chevron{
-    color: white;
-    width: 30px;
+.chevron {
+    color: $tertiary-color;
     transform: rotate(0deg);
     transition: all 0.5s ease-in-out;
 }
 
-.rotated{
+.rotated {
     transform: rotate(180deg);
+}
+
+.dropdown__text {
+    padding: 0 20px 20px 20px;
+    text-align: justify;
 }

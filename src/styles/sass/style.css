@@ -1,22 +1,5 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,500&display=swap");
-@media only screen and (min-width: 768px) {
-  body {
-    width: 100%;
-    margin: 0;
-    padding: 0;
-  }
-  header {
-    display: flex;
-  }
-  section {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-  }
-}
-/*Header*/
-/*Body*/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,500&display=swap"); /*Body*/
 body {
   margin: auto;
   font-family: "Montserrat";
@@ -36,16 +19,6 @@ p {
   color: #ff6060;
 }
 
-footer {
-  background-color: black;
-  height: 240px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
-  width: 100%;
-}
-
 li {
   list-style: none;
 }
@@ -55,7 +28,6 @@ h1 {
 }
 @media screen and (min-width: 768px) {
   h1 {
-    line-height: 51%;
     font-size: 36px;
   }
 }
@@ -72,24 +44,20 @@ h3 {
   }
 }
 
-.section__home {
+footer {
+  background-color: black;
+  height: 240px;
   display: flex;
   flex-direction: column;
+  justify-content: space-evenly;
   align-items: center;
-}
-@media screen and (min-width: 768px) {
-  .section__home {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    padding: 30px;
-  }
+  width: 100%;
 }
 
-.section__banner {
-  width: 100%;
-  display: flex;
-  justify-content: center;
+@media screen and (min-width: 768px) {
+  .section__home {
+    padding: 0 30px 30px;
+  }
 }
 
 .section__logement {
@@ -100,7 +68,7 @@ h3 {
 @media screen and (min-width: 768px) {
   .section__logement {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 31px;
     background-color: #f1f1f1;
     margin-top: 20px;
@@ -113,21 +81,18 @@ h3 {
   align-items: center;
   flex-direction: column;
 }
-@media screen and (min-width: 760px) {
+@media screen and (min-width: 768px) {
   .about {
     padding: 20px;
   }
 }
-.about__banner {
-  color: aqua;
-}
-@media screen and (min-width: 760px) {
+@media screen and (min-width: 768px) {
   .about__banner {
     margin-bottom: 35px;
   }
 }
 .about__container {
-  width: 100%;
+  width: 80%;
   padding: 0 20px;
   margin: 0 20px;
 }
@@ -135,17 +100,16 @@ h3 {
   padding-bottom: 20px;
   width: 100%;
 }
-@media screen and (min-width: 760px) {
+@media screen and (min-width: 768px) {
   .about__dropdown {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 0 180px;
   }
 }
 
 .location {
-  margin: auto;
+  margin: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -198,17 +162,8 @@ h3 {
   }
 }
 .location__tags {
-  width: 80%;
-  left: 30px;
-  margin-right: 10px;
   display: flex;
-  justify-content: space-between;
   align-items: flex-start;
-}
-@media screen and (min-width: 768px) {
-  .location__tags {
-    width: 40%;
-  }
 }
 @media screen and (min-width: 768px) {
   .location__dropdown {
@@ -257,7 +212,12 @@ h3 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 40px;
+  padding: 20px;
+}
+@media screen and (min-width: 768px) {
+  .header {
+    padding: 20px 30px;
+  }
 }
 .header__logo {
   width: 145px;
@@ -267,16 +227,11 @@ h3 {
   width: 140px;
 }
 .header__nav {
-  width: 140px;
   display: flex;
-  align-items: flex-end;
-  align-content: center;
-  padding: 10px;
 }
 
 .aboutbanner {
   margin: 10px;
-  padding-left: 10px;
   width: 336px;
   height: 223px;
 }
@@ -307,6 +262,7 @@ h3 {
   margin: auto;
   background-color: #f7f7f7;
   width: 335px;
+  border-radius: 10px;
 }
 @media screen and (min-width: 760px) {
   .dropdown {
@@ -318,6 +274,7 @@ h3 {
 .dropdown__button {
   display: flex;
   justify-content: space-between;
+  padding: 0 10px;
   align-items: center;
   margin-top: 10px;
   background-color: #ff6060;
@@ -331,26 +288,21 @@ h3 {
 }
 .dropdown__title {
   color: white;
-  padding: 20px;
-}
-.dropdown__icons {
-  color: white;
-  width: 30px;
-  font-weight: bold;
-  font-size: 30px;
-  position: absolute;
-  margin-left: 90%;
 }
 
 .chevron {
   color: white;
-  width: 30px;
   transform: rotate(0deg);
   transition: all 0.5s ease-in-out;
 }
 
 .rotated {
   transform: rotate(180deg);
+}
+
+.dropdown__text {
+  padding: 0 20px 20px 20px;
+  text-align: justify;
 }
 
 .banner {
@@ -365,23 +317,12 @@ h3 {
   }
 }
 .banner__picture {
-  width: 95%;
   filter: brightness(70%);
-}
-.banner__container {
-  display: flex;
-  justify-content: center;
-}
-@media screen and (min-width: 768px) {
-  .banner__container {
-    position: absolute;
-  }
 }
 .banner__container-text {
   position: absolute;
   width: 181px;
   color: white;
-  font-weight: 500;
   font-size: 24px;
   line-height: 24px;
 }
@@ -420,8 +361,6 @@ h3 {
 
 .thumb {
   width: 335px;
-  -o-object-fit: cover;
-     object-fit: cover;
   height: 255px;
   border-radius: 10px;
   background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
@@ -437,7 +376,6 @@ h3 {
   height: 255px;
   -o-object-fit: cover;
      object-fit: cover;
-  background: #ff6060;
   border-radius: 10px;
 }
 @media screen and (min-width: 768px) {
@@ -489,9 +427,9 @@ h3 {
 }
 .carrousel__left-arrow {
   position: absolute;
+  width: 5%;
   top: 50%;
   left: 20px;
-  font-size: 24px;
   color: white;
   z-index: 10;
   cursor: pointer;
@@ -502,14 +440,14 @@ h3 {
 }
 @media screen and (min-width: 768px) {
   .carrousel__left-arrow {
-    font-size: 75px;
+    top: 45%;
   }
 }
 .carrousel__right-arrow {
   position: absolute;
+  width: 5%;
   top: 50%;
   right: 20px;
-  font-size: 24px;
   color: white;
   z-index: 10;
   cursor: pointer;
@@ -520,7 +458,7 @@ h3 {
 }
 @media screen and (min-width: 768px) {
   .carrousel__right-arrow {
-    font-size: 75px;
+    top: 45%;
   }
 }
 
@@ -551,10 +489,11 @@ h3 {
 }
 
 .tag {
-  width: 84px;
   background: #ff6060;
-  border-radius: 5px;
+  border-radius: 10px;
   text-align: center;
+  padding: 2px 20px;
+  margin-right: 10px;
 }
 .tag__text {
   position: relative;
@@ -587,8 +526,9 @@ h3 {
 }
 @media screen and (min-width: 768px) {
   .host__name {
+    width: 100%;
     font-size: 18px;
-    display: flex;
+    margin: 0 5px;
   }
 }
 .host__picture {
