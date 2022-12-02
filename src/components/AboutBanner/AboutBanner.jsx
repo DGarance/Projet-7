@@ -5,8 +5,8 @@ export default function AboutBanner() {
     return (
         <div className="aboutbanner">
             <picture>
-                <source srcSet={aboutBanner} media="(min-width:760px)" />
-                <source srcSet={AboutBannerD} media="(min-width:375px)" />
+                <source media="(max-width:768px)" srcSet={aboutBanner} />
+                <source media="(min-width:375px)" srcSet={AboutBannerD} />
                 <img
                     src={aboutBanner}
                     alt="bannière à propos"
