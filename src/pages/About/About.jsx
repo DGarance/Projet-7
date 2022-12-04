@@ -6,7 +6,7 @@ export default function About() {
     return (
         <div className="about">
             <section className="about__banner">
-                <AboutBanner></AboutBanner>
+                <AboutBanner />
             </section>
             <section className="about__container">
                 <div className="about__dropdown">
@@ -16,7 +16,7 @@ export default function About() {
                             key={id}
                             aboutTitle={rule.aboutTitle}
                             aboutText={rule.aboutText}
-                        ></Dropdown>
+                        />
                     ))}
                 </div>
             </section>

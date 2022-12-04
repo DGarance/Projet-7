@@ -16,7 +16,6 @@ export default function Home() {
             <section className="section__banner">
                 <HomeBanner />
             </section>
-
             <section className="section__logement">
                 {data.map((appart, index) => (
                     <div className="thumb__logement" key={index}>
@@ -24,10 +23,7 @@ export default function Home() {
                             className="link_card_logement"
                             to={`/locations/${appart.id}`}
                         >
-                            <Thumb
-                                cover={appart.cover}
-                                title={appart.title}
-                            ></Thumb>
+                            <Thumb cover={appart.cover} title={appart.title} />
                         </Link>
                     </div>
                 ))}
