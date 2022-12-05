@@ -1,23 +1,25 @@
 import { Link } from 'react-router-dom';
-import { useEffect, useState } from 'react';
-import axios from 'axios';
 import HomeBanner from '../../components/HomeBanner/HomeBanner';
 import Thumb from '../../components/Thumb/Thumb';
+import locations from '../../data/data.json';
+import Banner from '../../components/Banner/Banner';
+import homeBannerD from '../../assets/homeban.png';
+import homeBannerM from '../../assets/homebannerM.jpg';
 
 export default function Home() {
-    const [data, setData] = useState([]);
-
-    useEffect(() => {
-        axios.get('/data.json').then((res) => setData(res.data));
-    }, []);
-
     return (
         <section className="section__home">
+            <Banner
+                image={homeBannerM}
+                imageD={homeBannerD}
+                imageM={homeBannerM}
+            ></Banner>
             <section className="section__banner">
                 <HomeBanner />
             </section>
             <section className="section__logement">
-                {data.map((appart, index) => (
+                {''}
+                {locations.map((appart, index) => (
                     <div className="thumb__logement" key={index}>
                         <Link
                             className="link_card_logement"

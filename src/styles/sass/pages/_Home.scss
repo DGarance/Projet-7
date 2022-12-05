@@ -11,10 +11,18 @@
 
     @media screen and (min-width:768px) {
         display: flex;
-        justify-content: space-around;
-        padding: 31px;
+        column-count: 3;
         background-color: $secondary-color;
         margin-top: 20px;
         border-radius: 25px
+    }
+}
+
+.thumb__logement {
+    width: 100%;
+    padding: 0 20px;
+
+    @media screen and (min-width: 768px) {
+        width: 340px;
     }
 }

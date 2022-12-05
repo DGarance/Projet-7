@@ -24,10 +24,7 @@
             "Frigo",
             "WIFI"
         ],
-        "tags": [
-            "Batignolle",
-            "Montmartre"
-        ]
+        "tags": ["Batignolle", "Montmartre"]
     },
     {
         "id": "b9123946",
@@ -56,11 +53,7 @@
             "Cuisine équipée",
             "Télévision"
         ],
-        "tags": [
-            "Canal Saint Martin",
-            "République",
-            "Appartement"
-        ]
+        "tags": ["Canal Saint Martin", "République", "Appartement"]
     },
     {
         "id": "46d188c5",
@@ -85,11 +78,7 @@
             "Télévision",
             "Sèche Cheveux"
         ],
-        "tags": [
-            "Buttes Chaumont",
-            "Laumière",
-            "Studio"
-        ]
+        "tags": ["Buttes Chaumont", "Laumière", "Studio"]
     },
     {
         "id": "7af00cd6",
@@ -115,12 +104,7 @@
             "Climatisation",
             "Télévision"
         ],
-        "tags": [
-            "Parmentier",
-            "Marais",
-            "Parc",
-            "Night Life"
-        ]
+        "tags": ["Parmentier", "Marais", "Parc", "Night Life"]
     },
     {
         "id": "0979876d",
@@ -148,10 +132,7 @@
             "Chambre Séparée",
             "Parking"
         ],
-        "tags": [
-            "Goncourt",
-            "Proche commerces"
-        ]
+        "tags": ["Goncourt", "Proche commerces"]
     },
     {
         "id": "f72a452f",
@@ -171,15 +152,8 @@
         },
         "rating": "5",
         "location": "Ile de France - Paris 18e",
-        "equipments": [
-            "Chambre Séparée",
-            "Parking"
-        ],
-        "tags": [
-            "Montmartre",
-            "Culture",
-            "Charme"
-        ]
+        "equipments": ["Chambre Séparée", "Parking"],
+        "tags": ["Montmartre", "Culture", "Charme"]
     },
     {
         "id": "b4c67936",
@@ -206,11 +180,7 @@
             "Bureau",
             "Parking"
         ],
-        "tags": [
-            "Transports",
-            "Cheap",
-            "18ème"
-        ]
+        "tags": ["Transports", "Cheap", "18ème"]
     },
     {
         "id": "bc6f7112",
@@ -239,12 +209,7 @@
             "Lit King Size",
             "Ascenseur"
         ],
-        "tags": [
-            "Luxe",
-            "Tour Eiffel",
-            "T3",
-            "6ème"
-        ]
+        "tags": ["Luxe", "Tour Eiffel", "T3", "6ème"]
     },
     {
         "id": "cb2f9222",
@@ -271,11 +236,7 @@
             "Wi-fi",
             "Parking"
         ],
-        "tags": [
-            "Montparnasse",
-            "Commerces",
-            "Famille"
-        ]
+        "tags": ["Montparnasse", "Commerces", "Famille"]
     },
     {
         "id": "d60ca600",
@@ -302,12 +263,7 @@
             "Wi-fi",
             "Ascenseur"
         ],
-        "tags": [
-            "Père Lachaise",
-            "11e",
-            "Metro 3",
-            "Metro 2"
-        ]
+        "tags": ["Père Lachaise", "11e", "Metro 3", "Metro 2"]
     },
     {
         "id": "2cf259e1",
@@ -326,17 +282,8 @@
         },
         "rating": "4",
         "location": "Ile de France - Paris 11e",
-        "equipments": [
-            "Clic-clac",
-            "Four",
-            "Sèche Cheveux",
-            "Wi-fi"
-        ],
-        "tags": [
-            "Marais",
-            "Studio",
-            "Parc"
-        ]
+        "equipments": ["Clic-clac", "Four", "Sèche Cheveux", "Wi-fi"],
+        "tags": ["Marais", "Studio", "Parc"]
     },
     {
         "id": "5323c29b",
@@ -363,13 +310,7 @@
             "TV",
             "Bouilloire"
         ],
-        "tags": [
-            "Marais",
-            "République",
-            "Studio",
-            "Proche Métros",
-            "Commerces"
-        ]
+        "tags": ["Marais", "République", "Studio", "Proche Métros", "Commerces"]
     },
     {
         "id": "af6d2d48",
@@ -396,11 +337,7 @@
             "Frigo",
             "Bouilloire"
         ],
-        "tags": [
-            "Forêt",
-            "Nature",
-            "Musée d'Ecouen"
-        ]
+        "tags": ["Forêt", "Nature", "Musée d'Ecouen"]
     },
     {
         "id": "7cbb378e",
@@ -430,11 +367,7 @@
             "Cintres",
             "Équipements de base"
         ],
-        "tags": [
-            "Forêt",
-            "Nature",
-            "Grande maison"
-        ]
+        "tags": ["Forêt", "Nature", "Grande maison"]
     },
     {
         "id": "ba55a0cc",
@@ -466,11 +399,7 @@
             "Micro-Ondes",
             "Parking"
         ],
-        "tags": [
-            "Nature",
-            "Groupe",
-            "Maison"
-        ]
+        "tags": ["Nature", "Groupe", "Maison"]
     },
     {
         "id": "1e181317",
@@ -499,11 +428,7 @@
             "Micro-Ondes",
             "Parking"
         ],
-        "tags": [
-            "La Défense",
-            "Loft",
-            "Luxe"
-        ]
+        "tags": ["La Défense", "Loft", "Luxe"]
     },
     {
         "id": "1e180563",
@@ -531,10 +456,7 @@
             "Wi-fi",
             "Micro-Ondes"
         ],
-        "tags": [
-            "Vue Parc",
-            "Apt de Charme"
-        ]
+        "tags": ["Vue Parc", "Apt de Charme"]
     },
     {
         "id": "2139a317",
@@ -550,15 +472,8 @@
         },
         "rating": "2",
         "location": "Ile de France - Paris 20e",
-        "equipments": [
-            "Bouilloire",
-            "Wi-fi",
-            "Micro-Ondes"
-        ],
-        "tags": [
-            "Vue Parc",
-            "Métros"
-        ]
+        "equipments": ["Bouilloire", "Wi-fi", "Micro-Ondes"],
+        "tags": ["Vue Parc", "Métros"]
     },
     {
         "id": "6ff132c6",
@@ -583,11 +498,7 @@
             "Wi-fi",
             "Micro-Ondes"
         ],
-        "tags": [
-            "Studio",
-            "Charmant",
-            "13e"
-        ]
+        "tags": ["Studio", "Charmant", "13e"]
     },
     {
         "id": "cb02d69b",
@@ -610,10 +521,6 @@
             "Frigo",
             "Baignoire"
         ],
-        "tags": [
-            "Louvre",
-            "Marais",
-            "Rivoli"
-        ]
+        "tags": ["Louvre", "Marais", "Rivoli"]
     }
 ]
