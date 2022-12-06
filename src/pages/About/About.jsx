@@ -12,7 +12,7 @@ export default function About() {
                     image={aboutBanner}
                     imageD={AboutBannerD}
                     imageM={aboutBanner}
-                ></Banner>
+                />
             </section>
             <section className="about__container">
                 <div className="about__dropdown">

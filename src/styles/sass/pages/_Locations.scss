@@ -1,17 +1,20 @@
 .location {
-    margin: 20px;
+    margin: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: calc(100% - 20px);
 
     @media screen and (min-width:768px) {
         display: flex;
         justify-content: center;
-        padding: 40px;
+        width: calc(100% - 40px);
 
     }
 
     &__container {
+        width: calc(100% - 40px);
+
         @media screen and (min-width:768px) {
             display: flex;
             justify-content: space-between;
@@ -28,8 +31,6 @@
 
         @media screen and (min-width:768px) {
             flex-direction: column;
-
-
         }
     }
 
@@ -62,6 +63,9 @@
 
 
     &__dropdown {
+        width: calc(100% - 20px);
+        padding: 20px;
+
         @media screen and (min-width:768px) {
             display: flex;
             width: 100%;

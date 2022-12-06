@@ -8,14 +8,15 @@
     }
 
     &__banner {
+        width: calc(100% - 20px);
+
         @media screen and (min-width:768px) {
             margin-bottom: 35px;
         }
     }
 
     &__container {
-        padding: 0 20px;
-        margin: 0 20px;
+        width: calc(100% - 20px);
 
         @media screen and (min-width:768px) {
             width: 80%;
@@ -24,7 +25,7 @@
 
     &__dropdown {
         padding-bottom: 20px;
-        width: 100%;
+        //width: 100%;
 
         @media screen and (min-width:768px) {
             display: flex;

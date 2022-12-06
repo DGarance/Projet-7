@@ -19,10 +19,10 @@
 }
 
 .thumb__logement {
-    width: 100%;
-    padding: 0 20px;
+    width: calc(100% - 20px);
 
     @media screen and (min-width: 768px) {
         width: 340px;
+        padding: 0 20px;
     }
 }
