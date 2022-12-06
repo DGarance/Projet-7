@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom';
-import HomeBanner from '../../components/HomeBanner/HomeBanner';
 import Thumb from '../../components/Thumb/Thumb';
 import locations from '../../data/data.json';
 import Banner from '../../components/Banner/Banner';
@@ -9,13 +8,13 @@ import homeBannerM from '../../assets/homebannerM.jpg';
 export default function Home() {
     return (
         <section className="section__home">
-            <Banner
-                image={homeBannerM}
-                imageD={homeBannerD}
-                imageM={homeBannerM}
-            ></Banner>
             <section className="section__banner">
-                <HomeBanner />
+                <Banner
+                    image={homeBannerM}
+                    imageD={homeBannerD}
+                    imageM={homeBannerM}
+                    text="Chez vous,partout et ailleurs"
+                ></Banner>
             </section>
             <section className="section__logement">
                 {''}

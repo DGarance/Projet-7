@@ -1,12 +1,18 @@
 import Dropdown from '../../components/Dropdown/Dropdown';
-import AboutBanner from '../../components/AboutBanner/AboutBanner';
 import aboutarray from '../../data/aboutarray.json';
+import Banner from '../../components/Banner/Banner';
+import aboutBanner from '../../assets/aboutBannerM.png';
+import AboutBannerD from '../../assets/aboutBanner.png';
 
 export default function About() {
     return (
         <div className="about">
             <section className="about__banner">
-                <AboutBanner />
+                <Banner
+                    image={aboutBanner}
+                    imageD={AboutBannerD}
+                    imageM={aboutBanner}
+                ></Banner>
             </section>
             <section className="about__container">
                 <div className="about__dropdown">

@@ -8,10 +8,13 @@ export default function Banner({ image, imageM, imageD, text }) {
                 >
                     <source media="(max-width:768px)" srcSet={imageM} alt="" />
                     <source media="(min-width:375px)" srcset={imageD} />
-                    <img src={image} alt="" className="banner__img" />
+                    <img
+                        src={image}
+                        alt=""
+                        className="banner__img aboutbanner_img"
+                    />
                 </picture>
             </div>
-
             <div className="banner__container-text">
                 <div className="banner__text">{text}</div>
             </div>
