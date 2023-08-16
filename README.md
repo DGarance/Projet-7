@@ -1,3 +1,56 @@
+# Projet n°7 | Parcours Développeur web | OpenClassrooms
+
+## Titre du Projet | Créez une application web de location immobilière avec React :house:
+
+## Contexte
+
+Ce projet a été réalisé dans le cadre de ma formation de développeuse web chez OpenClassrooms. L'objectif était de développer une application web de location immobilière en utilisant React pour le front-end, en suivant les maquettes Figma fournies et en répondant aux contraintes fonctionnelles énoncées.
+
+## Résumé du scénario
+
+Vous avez été engagé en tant que développeur front-end en freelance par Kasa, une entreprise de location d'appartements entre particuliers. Vous devez refondre leur site web en utilisant une stack JavaScript avec NodeJS côté back-end et React côté front-end. Votre mission consiste à développer l'ensemble de l'application, en respectant les maquettes Figma et en suivant les consignes de la CTO.
+
+## Tâches à accomplir
+
+- Initialiser l'application avec Create React App.
+- Configurer la navigation entre les pages de l'application avec React Router.
+- Développer les éléments de l'interface du site en créant des composants React, en suivant les maquettes Figma et en respectant les contraintes fonctionnelles.
+
+## Structure du projet
+
+Le projet est structuré de la manière suivante :
+
+- `src/` : le dossier contenant le code source de l'application React.
+- `public/` : le dossier contenant les ressources publiques de l'application.
+
+## Objectifs d'apprentissage
+
+Les objectifs d'apprentissage pour ce projet étaient :
+
+- Utiliser React pour développer des éléments d'interface d'une application web.
+- Configurer la navigation entre les pages de l'application avec React Router.
+- Suivre les maquettes Figma pour assurer la cohérence visuelle de l'application.
+
+## Compétences évaluées
+
+- Initialiser une application avec Create React App.
+- Configurer la navigation entre les pages de l'application avec React Router.
+- Développer des éléments d'interface d'un site web grâce à des composants React.
+
+# Instructions pour démarrer le projet
+
+## Kasa
+
+Pour démarrer le projet, suivez ces étapes :
+
+1. Clonez ce dépôt sur votre machine.
+2. Ouvrez le terminal et naviguez jusqu'au dossier du projet.
+3. Exécutez `npm install` pour installer les dépendances.
+4. Exécutez `npm start` pour lancer l'application en mode développement.
+5. L'application devrait s'ouvrir automatiquement dans votre navigateur. Sinon, vous pouvez accéder à http://localhost:3000 dans votre navigateur.
+
+Assurez-vous d'avoir Node et `npm` installés localement sur votre machine.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
